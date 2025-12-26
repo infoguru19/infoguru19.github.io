@@ -3,185 +3,222 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ravi Ranjan | DevOps Portfolio</title>
+  <title>Ravi Ranjan | DevOps & Cloud Engineer</title>
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Fira Code', monospace;
-      background: linear-gradient(-45deg, #0f172a, #1e1b4b, #111827, #020617);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
     }
-
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .glass-card {
-      background: rgba(255, 255, 255, 0.03);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    .glass-card:hover {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(99, 102, 241, 0.4);
-      transform: translateY(-5px);
-    }
-
-    .tech-badge {
-      background: rgba(99, 102, 241, 0.1);
-      color: #a5b4fc;
-      border: 1px solid rgba(99, 102, 241, 0.2);
-      padding: 2px 10px;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      display: inline-block;
-      margin: 2px;
+    .glass {
+      backdrop-filter: blur(14px);
+      background: rgba(15, 23, 42, 0.65);
     }
   </style>
 </head>
-<body class="text-gray-200 min-h-screen">
 
-  <header class="py-16 px-4">
-    <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
-      <div class="relative group">
-        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-        <img src="profile.jpg" alt="Ravi Ranjan" class="relative w-32 h-32 rounded-full border-2 border-gray-800 object-cover shadow-2xl" />
-      </div>
-      
-      <h1 class="mt-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-indigo-400">
-        Ravi Ranjan
-      </h1>
-      <p class="text-xl text-indigo-300 font-medium mt-2">DevOps & Cloud Architect</p>
-      
-      <div class="flex flex-wrap justify-center gap-4 mt-6 text-sm">
-        <a href="mailto:ravicse41@gmail.com" class="flex items-center gap-2 text-gray-400 hover:text-white transition">
-          <span>📧 ravicse41@gmail.com</span>
-        </a>
-        <a href="https://www.linkedin.com/in/ravi-ranjan-638746186/" target="_blank" class="text-gray-400 hover:text-white">LinkedIn</a>
-        <a href="https://github.com/infoguru19" target="_blank" class="text-gray-400 hover:text-white">GitHub</a>
-      </div>
+<body class="bg-gradient-to-br from-gray-900 via-slate-800 to-black text-gray-100">
 
-      <div class="mt-8 flex gap-4">
-        <a href="Ravi_Resume.pdf" download class="px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-semibold transition-all shadow-lg shadow-indigo-500/20">
-          Download CV
-        </a>
-        <a href="#projects" class="px-8 py-3 bg-transparent border border-gray-600 hover:border-indigo-400 text-gray-300 rounded-lg font-semibold transition-all">
-          View Projects
-        </a>
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 glass shadow-xl border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:justify-between gap-4">
+
+    <div class="flex items-center gap-4">
+      <img src="profile.jpg" alt="Ravi Ranjan"
+           class="w-20 h-20 rounded-full border-4 border-indigo-500 shadow-lg hover:scale-105 transition" />
+      <div>
+        <h1 class="text-3xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+          Ravi Ranjan
+        </h1>
+        <p class="text-sm text-gray-400">DevOps & Cloud Engineer</p>
       </div>
     </div>
-  </header>
 
-  <main class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="text-sm space-x-4 text-indigo-300">
+      <a href="mailto:ravicse41@gmail.com" class="hover:underline">Email</a>
+      <a href="https://www.linkedin.com/in/ravi-ranjan-638746186/" target="_blank" class="hover:underline">LinkedIn</a>
+      <a href="https://github.com/infoguru19" target="_blank" class="hover:underline">GitHub</a>
+      <a href="https://hub.docker.com/u/infoguru19" target="_blank" class="hover:underline">DockerHub</a>
+    </div>
+  </div>
+</header>
 
-    <section class="mb-20">
-      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-        <span class="text-indigo-500">01.</span> About Me
-      </h2>
-      <div class="glass-card p-8 rounded-2xl leading-relaxed text-gray-400">
-        I'm a <span class="text-indigo-300">DevOps & Cloud Engineer</span> with 9+ years of experience. My focus is on architecting high-availability systems and automating everything in between. Currently, I'm specializing in <span class="text-white">AI-driven observability</span> and scaling cloud-native infrastructures.
-      </div>
-    </section>
+<!-- ================= MAIN ================= -->
+<main class="max-w-6xl mx-auto px-4 py-16 space-y-20">
 
-    <section class="mb-20">
-      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-        <span class="text-indigo-500">02.</span> Tech Stack
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="glass-card p-6 rounded-xl">
-          <h3 class="text-indigo-400 font-bold mb-4">Cloud & IaC</h3>
-          <div class="flex flex-wrap">
-            <span class="tech-badge">Azure</span> <span class="tech-badge">AWS</span> 
-            <span class="tech-badge">GCP</span> <span class="tech-badge">Terraform</span>
-          </div>
-        </div>
-        <div class="glass-card p-6 rounded-xl">
-          <h3 class="text-indigo-400 font-bold mb-4">Containers</h3>
-          <div class="flex flex-wrap">
-            <span class="tech-badge">Kubernetes</span> <span class="tech-badge">Docker</span> 
-            <span class="tech-badge">Helm</span> <span class="tech-badge">ArgoCD</span>
-          </div>
-        </div>
-        <div class="glass-card p-6 rounded-xl">
-          <h3 class="text-indigo-400 font-bold mb-4">CI/CD & Automation</h3>
-          <div class="flex flex-wrap">
-            <span class="tech-badge">GitHub Actions</span> <span class="tech-badge">Ansible</span> 
-            <span class="tech-badge">Python</span> <span class="tech-badge">Jenkins</span>
-          </div>
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">👋 About Me</h2>
+    <p class="text-lg text-gray-300 leading-relaxed mt-4">
+      DevOps & Cloud Engineer with <strong>9+ years</strong> of experience designing,
+      automating, and scaling cloud-native platforms.
+      Currently integrating <span class="text-indigo-400">AI & LLM tools</span>
+      into CI/CD, observability, and infrastructure automation.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 class="section-title">🛠️ Key Skills</h2>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+      <div class="skill-card">
+        <h3>Cloud & IaC</h3>
+        <div class="badge-group">
+          <span>Azure</span><span>AWS</span><span>GCP</span><span>Terraform</span>
         </div>
       </div>
-    </section>
 
-    <section id="projects" class="mb-20">
-      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-        <span class="text-indigo-500">03.</span> Featured Projects
-      </h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <a href="https://github.com/infoguru19/kubernetes" class="glass-card p-8 rounded-2xl block group">
-          <div class="flex justify-between items-start mb-4">
-            <div class="text-indigo-500 text-3xl">📂</div>
-            <div class="text-gray-500 group-hover:text-indigo-400 transition">↗</div>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-2">K8s Blueprint</h3>
-          <p class="text-gray-400 text-sm mb-6">End-to-end Kubernetes architecture blueprint including monitoring, ingress, and security best practices.</p>
-          <div class="text-xs font-mono text-indigo-300">Kubernetes • Helm • Prometheus</div>
-        </a>
-
-        <a href="https://github.com/infoguru19/ansible" class="glass-card p-8 rounded-2xl block group">
-          <div class="flex justify-between items-start mb-4">
-            <div class="text-indigo-500 text-3xl">⚙️</div>
-            <div class="text-gray-500 group-hover:text-indigo-400 transition">↗</div>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-2">Ansible E2E</h3>
-          <p class="text-gray-400 text-sm mb-6">Enterprise-grade Ansible playbooks and roles for automated server hardening and app deployment.</p>
-          <div class="text-xs font-mono text-indigo-300">Ansible • YAML • Linux</div>
-        </a>
-      </div>
-    </section>
-
-    <section class="mb-20">
-      <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-        <span class="text-indigo-500">04.</span> Experience
-      </h2>
-      <div class="space-y-4">
-        <div class="relative pl-8 border-l-2 border-gray-800">
-          <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[9px] top-1 shadow-[0_0_10px_#6366f1]"></div>
-          <div class="glass-card p-6 rounded-xl">
-            <span class="text-indigo-400 text-sm font-bold">2021 — PRESENT</span>
-            <h3 class="text-xl font-bold text-white">Senior DevOps Engineer @ Amadeus</h3>
-            <p class="text-gray-400 mt-2 text-sm leading-relaxed">
-              Leading cloud migration strategies using Azure & Terraform. Architected secure secrets management with HashiCorp Vault.
-            </p>
-          </div>
-        </div>
-
-        <div class="relative pl-8 border-l-2 border-gray-800">
-          <div class="absolute w-4 h-4 bg-gray-700 rounded-full -left-[9px] top-1"></div>
-          <div class="glass-card p-6 rounded-xl">
-            <span class="text-indigo-400 text-sm font-bold">2019 — 2021</span>
-            <h3 class="text-xl font-bold text-white">DevOps Engineer @ FIS</h3>
-            <p class="text-gray-400 mt-2 text-sm leading-relaxed">
-              Optimized CI/CD pipelines and managed large-scale Kubernetes clusters with Grafana/Prometheus observability stack.
-            </p>
-          </div>
+      <div class="skill-card">
+        <h3>Containers & DevOps</h3>
+        <div class="badge-group">
+          <span>Kubernetes</span><span>Docker</span><span>Helm</span>
+          <span>GitHub Actions</span><span>Azure DevOps</span>
         </div>
       </div>
-    </section>
 
-  </main>
+      <div class="skill-card">
+        <h3>Monitoring & Security</h3>
+        <div class="badge-group">
+          <span>Prometheus</span><span>Grafana</span>
+          <span>Azure Monitor</span><span>Vault</span><span>RBAC</span>
+        </div>
+      </div>
 
-  <footer class="text-center py-10 border-t border-gray-900 bg-black/20 text-gray-500 text-xs">
-    <p>© 2025 Ravi Ranjan. All Rights Reserved.</p>
-    <p class="mt-2 text-gray-600">Built with Tailwind CSS & Fira Code</p>
-  </footer>
+      <div class="skill-card">
+        <h3>Scripting & OS</h3>
+        <div class="badge-group">
+          <span>Python</span><span>Bash</span><span>PowerShell</span>
+          <span>Linux</span><span>Windows</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2 class="section-title">🚀 Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-6">
+      <div class="project-card">
+        <h3>Kubernetes Blueprint</h3>
+        <p>End-to-end production-ready Kubernetes architecture.</p>
+        <a href="https://github.com/infoguru19/kubernetes" target="_blank">View →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>PowerShell Automation</h3>
+        <p>Enterprise-grade PowerShell automation modules.</p>
+        <a href="https://github.com/infoguru19/PowerShell" target="_blank">View →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Docker Repository</h3>
+        <p>Optimized Docker images & best practices.</p>
+        <a href="https://github.com/infoguru19/docker" target="_blank">View →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Ansible Framework</h3>
+        <p>Reusable Ansible roles and playbooks.</p>
+        <a href="https://github.com/infoguru19/ansible" target="_blank">View →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2 class="section-title">🕒 Experience</h2>
+
+    <div class="space-y-8 mt-6 border-l border-indigo-500 pl-6">
+      <div class="timeline">
+        <h3>Amadeus — Senior DevOps Engineer</h3>
+        <span>2021 – Present</span>
+        <ul>
+          <li>Terraform-based Azure platform automation</li>
+          <li>Kubernetes + Helm + HPA</li>
+          <li>Vault & Key Vault integration</li>
+        </ul>
+      </div>
+
+      <div class="timeline">
+        <h3>FIS — DevOps Engineer</h3>
+        <span>2019 – 2021</span>
+        <ul>
+          <li>Secure CI/CD pipelines</li>
+          <li>K8s observability stack</li>
+        </ul>
+      </div>
+
+      <div class="timeline">
+        <h3>Capgemini — Associate Consultant</h3>
+        <span>2016 – 2019</span>
+        <ul>
+          <li>Linux system administration</li>
+          <li>Docker & Jenkins pipelines</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2 class="section-title">🎓 Education</h2>
+    <p class="text-lg text-gray-300 mt-4">
+      <strong>B.Tech – Computer Science</strong><br>
+      WBUT, Kolkata (2011–2015) — CGPA: 8.01
+    </p>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-8 text-sm text-gray-500">
+  © 2025 Ravi Ranjan • Built with TailwindCSS & ❤️
+</footer>
+
+<!-- ================= COMPONENT STYLES ================= -->
+<style>
+  .section-title {
+    @apply text-3xl font-bold text-indigo-400 border-b border-indigo-500 pb-2;
+  }
+  .skill-card {
+    @apply bg-gray-800/60 p-6 rounded-xl shadow hover:shadow-xl transition;
+  }
+  .skill-card h3 {
+    @apply text-indigo-300 font-semibold mb-3;
+  }
+  .badge-group span {
+    @apply inline-block bg-indigo-500/20 text-indigo-300 px-3 py-1
+           rounded-full text-sm mr-2 mb-2;
+  }
+  .project-card {
+    @apply bg-gray-800/60 p-6 rounded-xl shadow hover:scale-105
+           hover:shadow-2xl transition;
+  }
+  .project-card h3 {
+    @apply text-xl font-semibold text-indigo-300;
+  }
+  .project-card a {
+    @apply inline-block mt-3 text-indigo-400 hover:underline;
+  }
+  .timeline h3 {
+    @apply text-xl font-semibold;
+  }
+  .timeline span {
+    @apply text-sm text-gray-400;
+  }
+  .timeline ul {
+    @apply list-disc ml-6 mt-2 text-gray-400;
+  }
+</style>
 
 </body>
 </html>
